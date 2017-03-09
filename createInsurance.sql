@@ -43,3 +43,22 @@ CREATE TABLE CLIENT
 	FOREIGN KEY(employee_ssn)
 	REFERENCES EMPLOYEES(emp_ssn)
 )
+
+CREATE TABLE Client_Audit
+(
+	clientFName varchar(30) not null,
+	clientLName varchar(30) not null,
+	emp_ssn int not null,
+	audit_action varchar(100),
+	audit_time datetime
+)
+
+CREATE TABLE Past_Clients
+(
+	clientFname varchar(30) not null,
+	clientLname varchar(30) not null,
+	ssn int not null,
+	primary_phone_number int,
+	primary_email varchar(30),
+	date_deleted datetime
+)
