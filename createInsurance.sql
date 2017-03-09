@@ -36,7 +36,6 @@ CREATE TABLE CLIENT
 	primary_email varchar(30),
 	address varchar(70),
 	dob datetime,
-	age int,
 	account_number int not null,
 	employee_ssn int not null,
 	PRIMARY KEY(ssn),
@@ -44,6 +43,41 @@ CREATE TABLE CLIENT
 	REFERENCES EMPLOYEES(emp_ssn)
 )
 
+CREATE TABLE DEPENDENTS
+(
+	fname varchar(30) not null,
+	lname varchar(30) not null,
+	dependent_ssn int not null,
+	client_ssn int not null,
+	dob datetime,
+	PRIMARY KEY(dependent_ssnssn),
+	FOREIGN KEY(client_ssn)
+	REFERENCES CLIENT(ssn)
+)
+
+CREATE TABLE LAWYERS
+(
+	fname varchar(30) not null,
+	lname varhcar(30) not null,
+	primary_email varchar(30),
+	primary_phone varchar(30),
+	lawyer_id int not null,
+	insurance_Company_Name varchar(50) not null,
+	PRIMARY KEY(lawyer_id),
+	FOREIGN KEY(insurance_Company_Name)
+	REFERENCES INSURANCE_COMPANY(Ins_Company_Name)
+)
+
+CREATE TABLE ACCOUNTS
+(
+	Account_ID int not null,
+	Date_Created datetime,
+	Account_Age int,
+	client_ssn int not null,
+	PRIMARY KEY(Account_ID),
+	FOREIGN KEY(client_ssn)
+	REFERENCES CLIENT(ssn)
+)
 CREATE TABLE Client_Audit
 (
 	clientFName varchar(30) not null,
