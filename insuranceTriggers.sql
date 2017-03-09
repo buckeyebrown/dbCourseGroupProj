@@ -1,12 +1,14 @@
+use insurance;
+
 /**
 * This trigger creates an audit record for every client added, and the date which they are added
 */
-CREATE TRIGGER clientAfterInsTrigger ON Client
+CREATE TRIGGER clientAfterInsTrigger ON [dbo].Client
 FOR INSERT
 AS
 	declare @firstname varchar(30);
 	declare @lastname varchar(30);
-	declare @emp_ssn int;
+	declare @emp_ssn char(9);
 	declare @audit_action varchar(100);
 
 	select @firstname=i.Fname from inserted i;
@@ -22,12 +24,12 @@ GO
 /**
 * This trigger will create a record of every client that is deleted, or customers that have "moved on" from the Broker.
 */
-CREATE TRIGGER pastClientsTrigger ON Client
+CREATE TRIGGER pastClientsTrigger ON [dbo].Client
 AFTER DELETE
 AS
 	declare @firstname varchar(30);
 	declare @lastname varchar(30);
-	declare @ssn int;
+	declare @ssn char(9);
 	declare @phone int;
 	declare @email varchar(30);
 
