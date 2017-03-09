@@ -31,7 +31,7 @@ CREATE TABLE CLIENT
 (
 	fname varchar(30) not null,
 	lname varchar(30) not null,
-	snn int not null,
+	ssn int not null,
 	primary_phone_number int,
 	primary_email varchar(30),
 	address varchar(70),
@@ -40,6 +40,6 @@ CREATE TABLE CLIENT
 	account_number int not null,
 	employee_ssn int not null,
 	PRIMARY KEY(ssn),
-	FOREIGN KEY(employee_ssn),
+	FOREIGN KEY(employee_ssn)
 	REFERENCES EMPLOYEES(emp_ssn)
 )
