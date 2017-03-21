@@ -66,13 +66,13 @@ INSERT INTO DEPENDENTS (Fname, Lname, Dependent_SSN, Client_SSN, DOB)
 values ('Sandy', 'Smith', '123118462', '123111232', '11/18/1970');
 
 INSERT INTO DEPENDENTS (Fname, Lname, Dependent_SSN, Client_SSN, DOB) 
-values ('Mark', 'Edison', '953118462', '123343232', '11/18/1980');
+values ('Mark', 'Edison', '953118462', '123111232', '11/18/1980');
 
 INSERT INTO DEPENDENTS (Fname, Lname, Dependent_SSN, Client_SSN, DOB) 
-values ('Halle', 'Berry', '531118462', '313343232', '11/14/1990');
+values ('Halle', 'Berry', '531118462', '123343232', '11/14/1990');
 
 INSERT INTO DEPENDENTS (Fname, Lname, Dependent_SSN, Client_SSN, DOB) 
-values ('Brad', 'Pitt', '531118952', '783343232', '11/11/1990');
+values ('Brad', 'Pitt', '531118952', '313343232', '11/11/1990');
 
 
 
@@ -81,16 +81,16 @@ values ('Brad', 'Pitt', '531118952', '783343232', '11/11/1990');
 */
 
 INSERT INTO LAWYERS (Fname, Lname, Primary_Email, Primary_Phone, Lawyer_ID, Insurance_Company_Name) 
-values ('Dwane', 'Carter', 'carter@gmail.com', '919-534-9624', '863563', 'Humana');
+values ('Dwane', 'Carter', 'carter@gmail.com', '9195349624', '863563', 'Humana');
 
 INSERT INTO LAWYERS (Fname, Lname, Primary_Email, Primary_Phone, Lawyer_ID, Insurance_Company_Name) 
-values ('Aubrey', 'Graham', 'graham@gmail.com', '919-354-9624', '103563', 'Humana');
+values ('Aubrey', 'Graham', 'graham@gmail.com', '9193549624', '103563', 'Humana');
 
 INSERT INTO LAWYERS (Fname, Lname, Primary_Email, Primary_Phone, Lawyer_ID, Insurance_Company_Name) 
-values ('Michael', 'Jordan', 'jordan@gmail.com', '862-124-9624', '962563', 'Humana');
+values ('Michael', 'Jordan', 'jordan@gmail.com', '8621249624', '962563', 'Humana');
 
 INSERT INTO LAWYERS (Fname, Lname, Primary_Email, Primary_Phone, Lawyer_ID, Insurance_Company_Name) 
-values ('Nicki', 'Minaj', 'minaj@gmail.com', '425-921-9224', '123663', 'Humana');
+values ('Nicki', 'Minaj', 'minaj@gmail.com', '4259219224', '123663', 'Humana');
 
 
 /*
@@ -104,10 +104,7 @@ INSERT INTO ACCOUNTS (Account_ID, Date_Created, Account_Age, client_ssn)
 values ('221781', '01/10/1995', '21', '123343232');
 
 INSERT INTO ACCOUNTS (Account_ID, Date_Created, Account_Age, client_ssn) 
-values ('117815', '02/10/1995', '21', '947243232');
-
-INSERT INTO ACCOUNTS (Account_ID, Date_Created, Account_Age, client_ssn) 
-values ('117819', '03/11/1996', '20', '947243232');
+values ('117815', '02/10/1995', '21', '313343232');
 
 /*
 * PAYMENT INSERTS
