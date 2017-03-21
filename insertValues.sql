@@ -3,6 +3,7 @@ use insurance;
 /*
 * CLIENT INSERTS
 */
+SELECT * FROM CLIENT
 
 INSERT INTO CLIENT (Fname, Lname, SSN, Primary_Phone_Number, primary_email, Address, DOB, employee_ssn, account_number) 
 values ('Mike', 'Smith', '123111232', 233, 'mike.smith@gmail.com', '101 Mike Smith Way Columbus, OH 43201', '12/17/1970', '234332243', 55);
@@ -135,9 +136,38 @@ INSERT INTO Boat_Insurance_Policy (Policy_Num,Term_Price, Term_Length, Active, s
 values ('4', '2000', '5', 'y', '03/10/2013', '4', '80')
 
 
+/*
+* HOME INSERTS
+*/
+
+INSERT INTO HOMES(House_ID, floors, occupants, year_built, house_age, total_cost, liability_deductible, liability_coverage, fire_deductible, fire_coverage, flood_deductible, flood_coverage, home_insurance_policy_num)
+values ('55', '2', '2', '1920', '97', '800000', '10000', '500000', '10000', '500000', '10000', '500000', '1')
+
+INSERT INTO HOMES(House_ID, floors, occupants, year_built, house_age, total_cost, liability_deductible, liability_coverage, fire_deductible, fire_coverage, flood_deductible, flood_coverage, home_insurance_policy_num)
+values ('53', '5', '4', '1960', '57', '300000', '4000', '60000', '3000', '70000', '2000', '20000', '2')
+
+INSERT INTO HOMES(House_ID, floors, occupants, year_built, house_age, total_cost, liability_deductible, liability_coverage, fire_deductible, fire_coverage, flood_deductible, flood_coverage, home_insurance_policy_num)
+values ('50', '5', '3', '1970', '47', '500000', '4000', '60000', '3000', '70000', '2000', '20000', '3')
+
+/*
+* ACCIDENT HISTORY INSERTS
+*/
+
+INSERT INTO ACCIDENT_HISTORY(Report_Number, Accident_Data, Accident_Date)
+values ('400', 'Owner injured another passenger with her truck.', '12/17/2016')
+
+INSERT INTO ACCIDENT_HISTORY(Report_Number, Accident_Data, Accident_Date)
+values ('402', 'Non injury, owner ran into a flag pole.', '12/18/2016')
+
+INSERT INTO ACCIDENT_HISTORY(Report_Number, Accident_Data, Accident_Date)
+values ('401', 'Non injury, owner got into a fender bender.', '12/31/2016')
 
 
-
+/*
+* Vehicles
+*/
+INSERT INTO VEHICLES(Vin, Total_cost, vehicle_year, vehicle_make, vehicle_model, vehicle_doors, bodily_injury_deductible, bodily_injury_coverage, comprehensive_injury_deductible, comprehensive_injury_coverage, uninsured_motorist_deductible, uninsured_motorist_coverage, collison_injury_deductible, collison_injury_coverage, accident_report_number, at_fault, is_totaled, damage_cost, vehicles_policy_number)
+values('11111222223333344', '13000', '1994', 'Mazda', 'Mazda6', '4', '10000', '5000000', '600', '30000', '500', '50000', '300', '30000', '400', 'yes', 'yes', '500000', '2')
 
 
 
