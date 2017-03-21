@@ -1,6 +1,48 @@
 use insurance;
 
 /*
+* INSURANCE COMPANY INSERTS
+*/
+
+INSERT INTO INSURANCE_COMPANY (Ins_Company_Name, Ins_Company_Address,Website_URL) 
+values ('Humana', '123 Sunshine Street Columbus 43210', 'www.humana.com');
+
+INSERT INTO INSURANCE_COMPANY (Ins_Company_Name, Ins_Company_Address,Website_URL) 
+values ('BestInsurance', '321 Happy Street Columbus 43210', 'www.bestinsurance.com');
+
+INSERT INTO INSURANCE_COMPANY (Ins_Company_Name, Ins_Company_Address,Website_URL) 
+values ('RightInsurance', '321 Wonderful Avenue Columbus 43210', 'www.rightinsurance.com');
+
+/*
+* INSURANCE BROKER INSERTS
+*/
+
+INSERT INTO BROKERS (Company_Name, Company_Address,Website_URL) 
+values ('Tims brokerage', '123 Doughnut Street Columbus 43210', 'www.timsbrokerage');
+
+INSERT INTO BROKERS (Company_Name, Company_Address,Website_URL) 
+values ('best brokers', '123 Cake Street Columbus 43210', 'www.bestbrokers');
+
+INSERT INTO BROKERS (Company_Name, Company_Address,Website_URL) 
+values ('Sallys brokerage', '123 Petunia Avenue Columbus 43210', 'www.sallysbrokerage');
+
+/*
+* EMPLOYEE INSERTS
+*/
+
+INSERT INTO EMPLOYEE (emp_ssn, work_phone, salary, fname, lname, broker_company) 
+values ('123111232', '123-456-7891', '40000', 'hannah', 'higgins', 'Tims brokerage');
+
+INSERT INTO EMPLOYEE (emp_ssn, work_phone, salary, fname, lname, broker_company) 
+values ('123343232', '321-456-7891', '50000', 'samantha', 'jones', 'best brokers');
+
+INSERT INTO EMPLOYEE (emp_ssn, work_phone, salary, fname, lname, broker_company) 
+values ('313343232', '321-702-7891', '90000', 'alexa', 'newman', 'Sallys brokerage');
+
+
+
+
+/*
 * CLIENT INSERTS
 */
 SELECT * FROM CLIENT
@@ -14,8 +56,7 @@ values ('Jeffrey', 'Brown', '123343232', 33, 'mrperson@gmail.com', '101 hello Wa
 INSERT INTO CLIENT (Fname, Lname, SSN, Primary_Phone_Number, Primary_Email, Address, DOB, employee_ssn, account_number) 
 values ('Adam', 'Morakis', '313343232', 32, 'morakis@gmail.com', '123 Edison Street Columbus, OH 43201', '06/07/1971', '294432423', 57);
 
-INSERT INTO CLIENT (Fname, Lname, SSN, Primary_Phone_Number, Primary_Email, Address, DOB, employee_ssn, account_number) 
-values ('Tanya', 'Smith', '783343232', 85, 'tanya@gmail.com', '647 lazenby crossing Columbus, OH 43201', '09/07/1980', '114432443', 80);
+
 
 
 /*
