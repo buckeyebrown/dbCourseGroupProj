@@ -1,5 +1,3 @@
-use insurance;
-
 /**
 * This trigger creates an audit record for every client added, and the date which they are added
 */

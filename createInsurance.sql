@@ -19,7 +19,7 @@ CREATE TABLE BROKERS
 CREATE TABLE EMPLOYEES
 (
 	emp_ssn char(9) UNIQUE not null,
-	work_phone int,
+	work_phone varchar(10),
 	salary int,
 	fname varchar(30) not null,
 	lname varchar(30) not null,
@@ -32,7 +32,7 @@ CREATE TABLE CLIENT
 	fname varchar(30) not null,
 	lname varchar(30) not null,
 	ssn char(9) UNIQUE not null,
-	primary_phone_number int,
+	primary_phone_number varchar(30),
 	primary_email varchar(30),
 	address varchar(70),
 	dob datetime,
@@ -60,7 +60,7 @@ CREATE TABLE LAWYERS
 	fname varchar(30) not null,
 	lname varchar(30) not null,
 	primary_email varchar(30),
-	primary_phone varchar(30),
+	primary_phone varchar(10),
 	lawyer_id int not null unique,
 	insurance_Company_Name varchar(50) not null,
 	PRIMARY KEY(lawyer_id),
