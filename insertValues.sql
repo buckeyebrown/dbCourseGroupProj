@@ -111,16 +111,16 @@ values ('117815', '02/10/1995', '21', '313343232');
 */
 
 INSERT INTO PAYMENT (Transaction_ID,Payment_Method, Payment_Date, Payment_Amount, Paid_Off, Balance, Account_no) 
-values ('64224', 'Credit', '03/11/2000', '100', 'y', '600', '55');
+values ('64224', 'Credit', '03/11/2000', '100', 'y', '600', '326781');
 
 INSERT INTO PAYMENT (Transaction_ID,Payment_Method, Payment_Date, Payment_Amount, Paid_Off, Balance, Account_no) 
-values ('64225', 'Credit', '03/11/2001', '200', 'y', '800', '56');
+values ('64225', 'Credit', '03/11/2001', '200', 'y', '800', '326781');
 
 INSERT INTO PAYMENT (Transaction_ID,Payment_Method, Payment_Date, Payment_Amount, Paid_Off, Balance, Account_no) 
-values ('64226', 'Credit', '03/11/2002', '300', 'y', '900', '57');
+values ('64226', 'Credit', '03/11/2002', '300', 'y', '900', '221781');
 
 INSERT INTO PAYMENT (Transaction_ID,Payment_Method, Payment_Date, Payment_Amount, Paid_Off, Balance, Account_no) 
-values ('64227', 'Credit', '03/11/2003', '400', 'y', '100', '80');
+values ('64227', 'Credit', '03/11/2003', '400', 'y', '100', '117815');
 
 
 /*
@@ -128,32 +128,32 @@ values ('64227', 'Credit', '03/11/2003', '400', 'y', '100', '80');
 */
 
 INSERT INTO Home_Insurance_Policy (Policy_Num,Term_Price, Term_Length, Active, startDate, policyAge, accountNumber) 
-values ('1', '1000', '5', 'y', '03/08/2014', '3', '55');
+values ('1', '1000', '5', 'y', '03/08/2014', '3', '326781');
 
 INSERT INTO Home_Insurance_Policy (Policy_Num,Term_Price, Term_Length, Active, startDate, policyAge, accountNumber) 
-values ('2', '5000', '10', 'y', '03/01/2010', '7', '56');
+values ('2', '5000', '10', 'y', '03/01/2010', '7', '326781');
 
 INSERT INTO Home_Insurance_Policy (Policy_Num,Term_Price, Term_Length, Active, startDate, policyAge, accountNumber) 
-values ('3', '6000', '10', 'y', '03/10/2015', '2', '57')
+values ('3', '6000', '10', 'y', '03/10/2015', '2', '221781')
 
 INSERT INTO Home_Insurance_Policy (Policy_Num,Term_Price, Term_Length, Active, startDate, policyAge, accountNumber) 
-values ('4', '3000', '5', 'y', '03/10/2013', '4', '80')
+values ('4', '3000', '5', 'y', '03/10/2013', '4', '117815')
 
 /*
 * CAR INSURANCE POLICY INSERTS
 */
 
 INSERT INTO Car_Insurance_Policy (Policy_Num,Term_Price, Term_Length, Active, startDate, policyAge, accountNumber) 
-values ('1', '2000', '5', 'y', '03/08/2014', '3', '55');
+values ('1', '2000', '5', 'y', '03/08/2014', '3', '117815');
 
 INSERT INTO Car_Insurance_Policy (Policy_Num,Term_Price, Term_Length, Active, startDate, policyAge, accountNumber)  
-values ('2', '3000', '10', 'y', '03/01/2010', '7', '56');
+values ('2', '3000', '10', 'y', '03/01/2010', '7', '117815');
 
 INSERT INTO Car_Insurance_Policy (Policy_Num,Term_Price, Term_Length, Active, startDate, policyAge, accountNumber) 
-values ('3', '4000', '10', 'y', '03/10/2015', '2', '57')
+values ('3', '4000', '10', 'y', '03/10/2015', '2', '221781')
 
 INSERT INTO Car_Insurance_Policy (Policy_Num,Term_Price, Term_Length, Active, startDate, policyAge, accountNumber) 
-values ('4', '5000', '5', 'y', '03/10/2013', '4', '80')
+values ('4', '5000', '5', 'y', '03/10/2013', '4', '326781')
 
 
 /*
@@ -161,16 +161,16 @@ values ('4', '5000', '5', 'y', '03/10/2013', '4', '80')
 */
 
 INSERT INTO Boat_Insurance_Policy (Policy_Num,Term_Price, Term_Length, Active, startDate, policyAge, accountNumber) 
-values ('1', '8000', '5', 'y', '03/08/2014', '3', '55');
+values ('1', '8000', '5', 'y', '03/08/2014', '3', '221781');
 
 INSERT INTO Boat_Insurance_Policy (Policy_Num,Term_Price, Term_Length, Active, startDate, policyAge, accountNumber)  
-values ('2', '7000', '10', 'y', '03/01/2010', '7', '56');
+values ('2', '7000', '10', 'y', '03/01/2010', '7', '326781');
 
 INSERT INTO Boat_Insurance_Policy (Policy_Num,Term_Price, Term_Length, Active, startDate, policyAge, accountNumber) 
-values ('3', '6000', '10', 'y', '03/10/2015', '2', '57')
+values ('3', '6000', '10', 'y', '03/10/2015', '2', '326781')
 
 INSERT INTO Boat_Insurance_Policy (Policy_Num,Term_Price, Term_Length, Active, startDate, policyAge, accountNumber) 
-values ('4', '2000', '5', 'y', '03/10/2013', '4', '80')
+values ('4', '2000', '5', 'y', '03/10/2013', '4', '117815')
 
 
 /*
