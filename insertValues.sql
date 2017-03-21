@@ -229,5 +229,12 @@ values('987QQ453HH22', '230000', '1000', '80000', '500', '300000', NULL, NULL, '
 * Accounts Sold
 */ 
 
+INSERT INTO ACCOUNTS_SOLD(emp_ssn, account_id)
+values('234332243', '326781')
 
+INSERT INTO ACCOUNTS_SOLD(emp_ssn, account_id)
+values('313343232', '221781')
+
+INSERT INTO ACCOUNTS_SOLD(emp_ssn, account_id)
+values('123343232', '326781')
 
