@@ -30,15 +30,14 @@ values ('Sallys brokerage', '123 Petunia Avenue Columbus 43210', 'www.sallysbrok
 * EMPLOYEE INSERTS
 */
 
-INSERT INTO EMPLOYEE (emp_ssn, work_phone, salary, fname, lname, broker_company) 
-values ('123111232', '123-456-7891', '40000', 'hannah', 'higgins', 'Tims brokerage');
+INSERT INTO EMPLOYEES (emp_ssn, work_phone, salary, fname, lname, broker_company) 
+values ('234332243', '1234567891', '40000', 'hannah', 'higgins', 'Tims brokerage');
 
-INSERT INTO EMPLOYEE (emp_ssn, work_phone, salary, fname, lname, broker_company) 
-values ('123343232', '321-456-7891', '50000', 'samantha', 'jones', 'best brokers');
+INSERT INTO EMPLOYEES (emp_ssn, work_phone, salary, fname, lname, broker_company) 
+values ('123343232', '3214567891', '50000', 'samantha', 'jones', 'best brokers');
 
-INSERT INTO EMPLOYEE (emp_ssn, work_phone, salary, fname, lname, broker_company) 
-values ('313343232', '321-702-7891', '90000', 'alexa', 'newman', 'Sallys brokerage');
-
+INSERT INTO EMPLOYEES (emp_ssn, work_phone, salary, fname, lname, broker_company) 
+values ('313343232', '3217027891', '90000', 'alexa', 'newman', 'Sallys brokerage');
 
 
 
@@ -51,10 +50,10 @@ INSERT INTO CLIENT (Fname, Lname, SSN, Primary_Phone_Number, primary_email, Addr
 values ('Mike', 'Smith', '123111232', 233, 'mike.smith@gmail.com', '101 Mike Smith Way Columbus, OH 43201', '12/17/1970', '234332243', 55);
 
 INSERT INTO CLIENT (Fname, Lname, SSN, Primary_Phone_Number, Primary_Email, Address, DOB, employee_ssn, account_number) 
-values ('Jeffrey', 'Brown', '123343232', 33, 'mrperson@gmail.com', '101 hello Way Columbus, OH 43201', '05/07/1971', '299443223', 56);
+values ('Jeffrey', 'Brown', '123343232', 33, 'mrperson@gmail.com', '101 hello Way Columbus, OH 43201', '05/07/1971', '234332243', 56);
 
 INSERT INTO CLIENT (Fname, Lname, SSN, Primary_Phone_Number, Primary_Email, Address, DOB, employee_ssn, account_number) 
-values ('Adam', 'Morakis', '313343232', 32, 'morakis@gmail.com', '123 Edison Street Columbus, OH 43201', '06/07/1971', '294432423', 57);
+values ('Adam', 'Morakis', '313343232', 32, 'morakis@gmail.com', '123 Edison Street Columbus, OH 43201', '06/07/1971', '313343232', 57);
 
 
 
