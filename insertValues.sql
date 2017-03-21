@@ -30,31 +30,29 @@ values ('Sallys brokerage', '123 Petunia Avenue Columbus 43210', 'www.sallysbrok
 * EMPLOYEE INSERTS
 */
 
-INSERT INTO EMPLOYEE (emp_ssn, work_phone, salary, fname, lname, broker_company) 
-values ('123111232', '123-456-7891', '40000', 'hannah', 'higgins', 'Tims brokerage');
+INSERT INTO EMPLOYEES (emp_ssn, work_phone, salary, fname, lname, broker_company) 
+values ('234332243', '1234567891', '40000', 'hannah', 'higgins', 'Tims brokerage');
 
-INSERT INTO EMPLOYEE (emp_ssn, work_phone, salary, fname, lname, broker_company) 
-values ('123343232', '321-456-7891', '50000', 'samantha', 'jones', 'best brokers');
+INSERT INTO EMPLOYEES (emp_ssn, work_phone, salary, fname, lname, broker_company) 
+values ('123343232', '3214567891', '50000', 'samantha', 'jones', 'best brokers');
 
-INSERT INTO EMPLOYEE (emp_ssn, work_phone, salary, fname, lname, broker_company) 
-values ('313343232', '321-702-7891', '90000', 'alexa', 'newman', 'Sallys brokerage');
-
+INSERT INTO EMPLOYEES (emp_ssn, work_phone, salary, fname, lname, broker_company) 
+values ('313343232', '3217027891', '90000', 'alexa', 'newman', 'Sallys brokerage');
 
 
 
 /*
 * CLIENT INSERTS
 */
-SELECT * FROM CLIENT
 
 INSERT INTO CLIENT (Fname, Lname, SSN, Primary_Phone_Number, primary_email, Address, DOB, employee_ssn, account_number) 
 values ('Mike', 'Smith', '123111232', 233, 'mike.smith@gmail.com', '101 Mike Smith Way Columbus, OH 43201', '12/17/1970', '234332243', 55);
 
 INSERT INTO CLIENT (Fname, Lname, SSN, Primary_Phone_Number, Primary_Email, Address, DOB, employee_ssn, account_number) 
-values ('Jeffrey', 'Brown', '123343232', 33, 'mrperson@gmail.com', '101 hello Way Columbus, OH 43201', '05/07/1971', '299443223', 56);
+values ('Jeffrey', 'Brown', '123343232', 33, 'mrperson@gmail.com', '101 hello Way Columbus, OH 43201', '05/07/1971', '234332243', 56);
 
 INSERT INTO CLIENT (Fname, Lname, SSN, Primary_Phone_Number, Primary_Email, Address, DOB, employee_ssn, account_number) 
-values ('Adam', 'Morakis', '313343232', 32, 'morakis@gmail.com', '123 Edison Street Columbus, OH 43201', '06/07/1971', '294432423', 57);
+values ('Adam', 'Morakis', '313343232', 32, 'morakis@gmail.com', '123 Edison Street Columbus, OH 43201', '06/07/1971', '313343232', 57);
 
 
 
@@ -67,13 +65,13 @@ INSERT INTO DEPENDENTS (Fname, Lname, Dependent_SSN, Client_SSN, DOB)
 values ('Sandy', 'Smith', '123118462', '123111232', '11/18/1970');
 
 INSERT INTO DEPENDENTS (Fname, Lname, Dependent_SSN, Client_SSN, DOB) 
-values ('Mark', 'Edison', '953118462', '123343232', '11/18/1980');
+values ('Mark', 'Edison', '953118462', '123111232', '11/18/1980');
 
 INSERT INTO DEPENDENTS (Fname, Lname, Dependent_SSN, Client_SSN, DOB) 
-values ('Halle', 'Berry', '531118462', '313343232', '11/14/1990');
+values ('Halle', 'Berry', '531118462', '123343232', '11/14/1990');
 
 INSERT INTO DEPENDENTS (Fname, Lname, Dependent_SSN, Client_SSN, DOB) 
-values ('Brad', 'Pitt', '531118952', '783343232', '11/11/1990');
+values ('Brad', 'Pitt', '531118952', '313343232', '11/11/1990');
 
 
 
@@ -82,16 +80,16 @@ values ('Brad', 'Pitt', '531118952', '783343232', '11/11/1990');
 */
 
 INSERT INTO LAWYERS (Fname, Lname, Primary_Email, Primary_Phone, Lawyer_ID, Insurance_Company_Name) 
-values ('Dwane', 'Carter', 'carter@gmail.com', '919-534-9624', '863563', 'Humana');
+values ('Dwane', 'Carter', 'carter@gmail.com', '9195349624', '863563', 'Humana');
 
 INSERT INTO LAWYERS (Fname, Lname, Primary_Email, Primary_Phone, Lawyer_ID, Insurance_Company_Name) 
-values ('Aubrey', 'Graham', 'graham@gmail.com', '919-354-9624', '103563', 'Humana');
+values ('Aubrey', 'Graham', 'graham@gmail.com', '9193549624', '103563', 'Humana');
 
 INSERT INTO LAWYERS (Fname, Lname, Primary_Email, Primary_Phone, Lawyer_ID, Insurance_Company_Name) 
-values ('Michael', 'Jordan', 'jordan@gmail.com', '862-124-9624', '962563', 'Humana');
+values ('Michael', 'Jordan', 'jordan@gmail.com', '8621249624', '962563', 'Humana');
 
 INSERT INTO LAWYERS (Fname, Lname, Primary_Email, Primary_Phone, Lawyer_ID, Insurance_Company_Name) 
-values ('Nicki', 'Minaj', 'minaj@gmail.com', '425-921-9224', '123663', 'Humana');
+values ('Nicki', 'Minaj', 'minaj@gmail.com', '4259219224', '123663', 'Humana');
 
 
 /*
@@ -105,26 +103,23 @@ INSERT INTO ACCOUNTS (Account_ID, Date_Created, Account_Age, client_ssn)
 values ('221781', '01/10/1995', '21', '123343232');
 
 INSERT INTO ACCOUNTS (Account_ID, Date_Created, Account_Age, client_ssn) 
-values ('117815', '02/10/1995', '21', '947243232');
-
-INSERT INTO ACCOUNTS (Account_ID, Date_Created, Account_Age, client_ssn) 
-values ('117819', '03/11/1996', '20', '947243232');
+values ('117815', '02/10/1995', '21', '313343232');
 
 /*
 * PAYMENT INSERTS
 */
 
 INSERT INTO PAYMENT (Transaction_ID,Payment_Method, Payment_Date, Payment_Amount, Paid_Off, Balance, Account_no) 
-values ('64224', 'Credit', '03/11/2000', '100', 'y', '600', '55');
+values ('64224', 'Credit', '03/11/2000', '100', 'y', '600', '326781');
 
 INSERT INTO PAYMENT (Transaction_ID,Payment_Method, Payment_Date, Payment_Amount, Paid_Off, Balance, Account_no) 
-values ('64225', 'Credit', '03/11/2001', '200', 'y', '800', '56');
+values ('64225', 'Credit', '03/11/2001', '200', 'y', '800', '326781');
 
 INSERT INTO PAYMENT (Transaction_ID,Payment_Method, Payment_Date, Payment_Amount, Paid_Off, Balance, Account_no) 
-values ('64226', 'Credit', '03/11/2002', '300', 'y', '900', '57');
+values ('64226', 'Credit', '03/11/2002', '300', 'y', '900', '221781');
 
 INSERT INTO PAYMENT (Transaction_ID,Payment_Method, Payment_Date, Payment_Amount, Paid_Off, Balance, Account_no) 
-values ('64227', 'Credit', '03/11/2003', '400', 'y', '100', '80');
+values ('64227', 'Credit', '03/11/2003', '400', 'y', '100', '117815');
 
 
 /*
@@ -132,32 +127,32 @@ values ('64227', 'Credit', '03/11/2003', '400', 'y', '100', '80');
 */
 
 INSERT INTO Home_Insurance_Policy (Policy_Num,Term_Price, Term_Length, Active, startDate, policyAge, accountNumber) 
-values ('1', '1000', '5', 'y', '03/08/2014', '3', '55');
+values ('1', '1000', '5', 'y', '03/08/2014', '3', '326781');
 
 INSERT INTO Home_Insurance_Policy (Policy_Num,Term_Price, Term_Length, Active, startDate, policyAge, accountNumber) 
-values ('2', '5000', '10', 'y', '03/01/2010', '7', '56');
+values ('2', '5000', '10', 'y', '03/01/2010', '7', '326781');
 
 INSERT INTO Home_Insurance_Policy (Policy_Num,Term_Price, Term_Length, Active, startDate, policyAge, accountNumber) 
-values ('3', '6000', '10', 'y', '03/10/2015', '2', '57')
+values ('3', '6000', '10', 'y', '03/10/2015', '2', '221781')
 
 INSERT INTO Home_Insurance_Policy (Policy_Num,Term_Price, Term_Length, Active, startDate, policyAge, accountNumber) 
-values ('4', '3000', '5', 'y', '03/10/2013', '4', '80')
+values ('4', '3000', '5', 'y', '03/10/2013', '4', '117815')
 
 /*
 * CAR INSURANCE POLICY INSERTS
 */
 
 INSERT INTO Car_Insurance_Policy (Policy_Num,Term_Price, Term_Length, Active, startDate, policyAge, accountNumber) 
-values ('1', '2000', '5', 'y', '03/08/2014', '3', '55');
+values ('1', '2000', '5', 'y', '03/08/2014', '3', '117815');
 
 INSERT INTO Car_Insurance_Policy (Policy_Num,Term_Price, Term_Length, Active, startDate, policyAge, accountNumber)  
-values ('2', '3000', '10', 'y', '03/01/2010', '7', '56');
+values ('2', '3000', '10', 'y', '03/01/2010', '7', '117815');
 
 INSERT INTO Car_Insurance_Policy (Policy_Num,Term_Price, Term_Length, Active, startDate, policyAge, accountNumber) 
-values ('3', '4000', '10', 'y', '03/10/2015', '2', '57')
+values ('3', '4000', '10', 'y', '03/10/2015', '2', '221781')
 
 INSERT INTO Car_Insurance_Policy (Policy_Num,Term_Price, Term_Length, Active, startDate, policyAge, accountNumber) 
-values ('4', '5000', '5', 'y', '03/10/2013', '4', '80')
+values ('4', '5000', '5', 'y', '03/10/2013', '4', '326781')
 
 
 /*
@@ -165,16 +160,16 @@ values ('4', '5000', '5', 'y', '03/10/2013', '4', '80')
 */
 
 INSERT INTO Boat_Insurance_Policy (Policy_Num,Term_Price, Term_Length, Active, startDate, policyAge, accountNumber) 
-values ('1', '8000', '5', 'y', '03/08/2014', '3', '55');
+values ('1', '8000', '5', 'y', '03/08/2014', '3', '221781');
 
 INSERT INTO Boat_Insurance_Policy (Policy_Num,Term_Price, Term_Length, Active, startDate, policyAge, accountNumber)  
-values ('2', '7000', '10', 'y', '03/01/2010', '7', '56');
+values ('2', '7000', '10', 'y', '03/01/2010', '7', '326781');
 
 INSERT INTO Boat_Insurance_Policy (Policy_Num,Term_Price, Term_Length, Active, startDate, policyAge, accountNumber) 
-values ('3', '6000', '10', 'y', '03/10/2015', '2', '57')
+values ('3', '6000', '10', 'y', '03/10/2015', '2', '326781')
 
 INSERT INTO Boat_Insurance_Policy (Policy_Num,Term_Price, Term_Length, Active, startDate, policyAge, accountNumber) 
-values ('4', '2000', '5', 'y', '03/10/2013', '4', '80')
+values ('4', '2000', '5', 'y', '03/10/2013', '4', '117815')
 
 
 /*
