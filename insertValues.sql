@@ -251,3 +251,14 @@ values('962563', NULL, '3', NULL)
 INSERT INTO Policies_Written(Lawyer_ID, Home_Ins_Policy_Num, Car_Ins_Policy_Num, Boat_Ins_Policy_Num)
 values('103563', '1', '1', NULL)
 
+/*
+* Companies_Brokers
+*/
+INSERT INTO Companies_Brokers(Ins_Company_Name, Broker_Company_Name)
+values('Humana', 'best brokerage')
+
+INSERT INTO Companies_Brokers(Ins_Company_Name, Broker_Company_Name)
+values('BestInsurance', 'Sallys brokerage')
+
+INSERT INTO Companies_Brokers(Ins_Company_Name, Broker_Company_Name)
+values('RightInsurance', 'Tims brokerage')
