@@ -238,3 +238,16 @@ values('313343232', '221781')
 INSERT INTO ACCOUNTS_SOLD(emp_ssn, account_id)
 values('123343232', '326781')
 
+/*
+* Policies Written
+*/
+
+INSERT INTO Policies_Written(Lawyer_ID, Home_Ins_Policy_Num, Car_Ins_Policy_Num, Boat_Ins_Policy_Num)
+values('863563', NULL, NULL, '2')
+
+INSERT INTO Policies_Written(Lawyer_ID, Home_Ins_Policy_Num, Car_Ins_Policy_Num, Boat_Ins_Policy_Num)
+values('962563', NULL, '3', NULL)
+
+INSERT INTO Policies_Written(Lawyer_ID, Home_Ins_Policy_Num, Car_Ins_Policy_Num, Boat_Ins_Policy_Num)
+values('103563', '1', '1', NULL)
+
