@@ -219,6 +219,15 @@ values('77711222223333344', '13000', '1998', 'Honda', 'Civic', '4', '13000', '20
 INSERT INTO BOATS(Hin, Total_cost, bodily_injury_deductible, bodily_injury_coverage, collison_injury_deductible, collison_injury_coverage, accident_report_number, at_fault, is_totaled, damage_cost, boat_insurance_policy_number)
 values('98734453HH22', '500000', '2000', '70000', '100', '300000', NULL, NULL, 'no', '0', '2')
 
+INSERT INTO BOATS(Hin, Total_cost, bodily_injury_deductible, bodily_injury_coverage, collison_injury_deductible, collison_injury_coverage, accident_report_number, at_fault, is_totaled, damage_cost, boat_insurance_policy_number)
+values('987FFFF3HH22', '50000', '200', '7000', '100', '300000', NULL, NULL, 'no', '0', '4')
+
+INSERT INTO BOATS(Hin, Total_cost, bodily_injury_deductible, bodily_injury_coverage, collison_injury_deductible, collison_injury_coverage, accident_report_number, at_fault, is_totaled, damage_cost, boat_insurance_policy_number)
+values('987QQ453HH22', '230000', '1000', '80000', '500', '300000', NULL, NULL, 'no', '0', '3')
+
+/*
+* Accounts Sold
+*/ 
 
 
 
