@@ -44,7 +44,6 @@ values ('313343232', '3217027891', '90000', 'alexa', 'newman', 'Sallys brokerage
 /*
 * CLIENT INSERTS
 */
-SELECT * FROM CLIENT
 
 INSERT INTO CLIENT (Fname, Lname, SSN, Primary_Phone_Number, primary_email, Address, DOB, employee_ssn, account_number) 
 values ('Mike', 'Smith', '123111232', 233, 'mike.smith@gmail.com', '101 Mike Smith Way Columbus, OH 43201', '12/17/1970', '234332243', 55);
