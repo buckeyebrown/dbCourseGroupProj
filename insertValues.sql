@@ -198,6 +198,15 @@ values ('402', 'Non injury, owner ran into a flag pole.', '12/18/2016')
 INSERT INTO ACCIDENT_HISTORY(Report_Number, Accident_Data, Accident_Date)
 values ('401', 'Non injury, owner got into a fender bender.', '12/31/2016')
 
+INSERT INTO ACCIDENT_HISTORY(Report_Number, Accident_Data, Accident_Date)
+values ('500', 'Crashed into a harbor.', '06/17/2016')
+
+INSERT INTO ACCIDENT_HISTORY(Report_Number, Accident_Data, Accident_Date)
+values ('502', 'DUI boat collision', '07/18/2016')
+
+INSERT INTO ACCIDENT_HISTORY(Report_Number, Accident_Data, Accident_Date)
+values ('501', 'Non injury, owner got into a fender bender with another boat', '08/31/2016')
+
 
 /*
 * Vehicles
@@ -255,7 +264,7 @@ values('103563', '1', '1', NULL)
 * Companies_Brokers
 */
 INSERT INTO Companies_Brokers(Ins_Company_Name, Broker_Company_Name)
-values('Humana', 'best brokerage')
+values('Humana', 'best brokers')
 
 INSERT INTO Companies_Brokers(Ins_Company_Name, Broker_Company_Name)
 values('BestInsurance', 'Sallys brokerage')
