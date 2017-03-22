@@ -252,7 +252,7 @@ CREATE TABLE Client_Audit
 (
 	clientFName varchar(30) not null,
 	clientLName varchar(30) not null,
-	emp_ssn char(9) UNIQUE not null,
+	emp_ssn char(9) not null,
 	audit_action varchar(100),
 	audit_time datetime
 )
