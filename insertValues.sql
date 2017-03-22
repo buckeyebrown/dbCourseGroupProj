@@ -209,7 +209,7 @@ INSERT INTO VEHICLES(Vin, Total_cost, vehicle_year, vehicle_make, vehicle_model,
 values('77711222223333344', '13000', '1996', 'Honda', 'Accord', '4', '14000', '1000000', '500', '30000', '501', '50000', '300', '30000', '400', 'yes', 'yes', '500000', '1')
 
 INSERT INTO VEHICLES(Vin, Total_cost, vehicle_year, vehicle_make, vehicle_model, vehicle_doors, bodily_injury_deductible, bodily_injury_coverage, comprehensive_injury_deductible, comprehensive_injury_coverage, uninsured_motorist_deductible, uninsured_motorist_coverage, collison_injury_deductible, collison_injury_coverage, accident_report_number, at_fault, is_totaled, damage_cost, vehicles_policy_number)
-values('77711222223333344', '13000', '1998', 'Honda', 'Civic', '4', '13000', '2000000', '500', '30000', '502', '50000', '300', '30000', '400', 'yes', 'yes', '500000', '3')
+values('7771122222333DD44', '13000', '1998', 'Honda', 'Civic', '4', '13000', '2000000', '500', '30000', '502', '50000', '300', '30000', '400', 'yes', 'yes', '500000', '3')
 
 
 /*
@@ -217,13 +217,13 @@ values('77711222223333344', '13000', '1998', 'Honda', 'Civic', '4', '13000', '20
 */
 
 INSERT INTO BOATS(Hin, Total_cost, bodily_injury_deductible, bodily_injury_coverage, collison_injury_deductible, collison_injury_coverage, accident_report_number, at_fault, is_totaled, damage_cost, boat_insurance_policy_number)
-values('98734453HH22', '500000', '2000', '70000', '100', '300000', NULL, NULL, 'no', '0', '2')
+values('98734453HH22', '500000', '2000', '70000', '100', '300000', '500', 'no', 'no', '0', '2')
 
 INSERT INTO BOATS(Hin, Total_cost, bodily_injury_deductible, bodily_injury_coverage, collison_injury_deductible, collison_injury_coverage, accident_report_number, at_fault, is_totaled, damage_cost, boat_insurance_policy_number)
-values('987FFFF3HH22', '50000', '200', '7000', '100', '300000', NULL, NULL, 'no', '0', '4')
+values('987FFFF3HH22', '50000', '200', '7000', '100', '300000', '501', 'no', 'no', '0', '4')
 
 INSERT INTO BOATS(Hin, Total_cost, bodily_injury_deductible, bodily_injury_coverage, collison_injury_deductible, collison_injury_coverage, accident_report_number, at_fault, is_totaled, damage_cost, boat_insurance_policy_number)
-values('987QQ453HH22', '230000', '1000', '80000', '500', '300000', NULL, NULL, 'no', '0', '3')
+values('987QQ453HH22', '230000', '1000', '80000', '500', '300000', '502', 'no', 'no', '0', '3')
 
 /*
 * Accounts Sold
