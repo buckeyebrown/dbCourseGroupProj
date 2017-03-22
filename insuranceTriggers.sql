@@ -40,3 +40,9 @@ AS
 	insert into Past_Clients(clientFName, clientLName, ssn, primary_phone_number, primary_email, date_deleted) values(@firstname, @lastname, @ssn, @phone, @email, getdate());
 	
 GO
+
+/*
+* Testing
+* - The insert triggers were tested after running our insert scripts in insertValues.sql
+* - The delete triggers were tested running delete queries
+*/
