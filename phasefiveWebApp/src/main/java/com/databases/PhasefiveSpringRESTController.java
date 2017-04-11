@@ -24,13 +24,13 @@ public class PhasefiveSpringRESTController {
 	//private SQLConnect sc;
 	//private JSONResponse jsonResponse;
 
-	/**
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public ModelAndView index() {
 		ModelAndView mav = new ModelAndView();
 		mav.setViewName("index");
 		return mav;
 	}
+	/**
 
 	@RequestMapping(value = "/MainServ", method = RequestMethod.GET)
 	public void mainServ(@RequestParam(value = "orderNumber", defaultValue = "") String orderNum,
@@ -54,8 +54,4 @@ public class PhasefiveSpringRESTController {
 		}
 	}*/
 
-	@RequestMapping("/")
-	public String index() {
-		return "Greetings from Spring Boot!";
-	}
 }
