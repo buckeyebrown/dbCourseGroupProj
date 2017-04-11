@@ -1,5 +1,3 @@
-use insurance;
-
 CREATE TABLE INSURANCE_COMPANY
 (
 	Ins_Company_Name varchar(50) not null,

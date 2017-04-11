@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c567845-0346-44d6-b612-2896ded9e13c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLQueriesPart3.sql" afterPath="$PROJECT_DIR$/SQLQueriesPart3.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/insertValues.sql" afterPath="$PROJECT_DIR$/insertValues.sql" />
-    </list>
+    <list default="true" id="4c567845-0346-44d6-b612-2896ded9e13c" name="Default" comment="" />
     <ignored path="dbCourseGroupProj.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.gradle/" />

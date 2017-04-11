@@ -1,5 +1,3 @@
-use insurance;
-
 /*
 * INSURANCE COMPANY INSERTS
 */
