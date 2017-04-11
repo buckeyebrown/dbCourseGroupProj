@@ -1,39 +1,47 @@
 /*
 * Union SQL Query (UNION)
-* Select all the distinct account numbers from the Boat Insurance and Car Insurance relations
+* Select the first and last name of Clients who either have a dependent or the employee's last name is higgins.
 */
 
-SELECT accountNumber FROM CAR_INSURANCE_POLICY
+SELECT fname, lname FROM CLIENT WHERE ssn IN (SELECT client_ssn FROM DEPENDENTS)
 UNION
-SELECT accountNumber FROM BOAT_INSURANCE_POLICY
+SELECT fname, lname FROM CLIENT WHERE employee_ssn IN (SELECT emp_ssn FROM EMPLOYEES WHERE lname = 'higgins')
 
 /*
 * Intersection SQL Query (INTERSECT)
-* Find a total cost that's the same for a Home Insurance Policy and Boat Insurance Policy
+* Select the first and last name of Clients who have a dependent and the employee's last name is higgins.
 */
 
-SELECT total_cost FROM HOMES
+SELECT fname, lname FROM CLIENT WHERE ssn IN (SELECT client_ssn FROM DEPENDENTS)
 INTERSECT
-SELECT Total_cost FROM BOATS
+SELECT fname, lname FROM CLIENT WHERE employee_ssn IN (SELECT emp_ssn FROM EMPLOYEES WHERE lname = 'higgins')
 
 /*
-* Difference SQL Query (EXCEPT)
-* Select the first name, last name, and ssn of all the clients without a dependent
+* Difference + Intersect SQL Query (EXCEPT)
+* Select the Account_ID on all accounts of Clients who don't have a dependent and employee with the last name higgins.
 */
 
-SELECT fname, lname, ssn FROM CLIENT
+SELECT Account_ID FROM ACCOUNTS
 EXCEPT
-SELECT fname, lname, client_ssn FROM DEPENDENTS
+(SELECT ssn FROM CLIENT WHERE ssn IN (SELECT client_ssn FROM DEPENDENTS)
+INTERSECT
+SELECT employee_ssn FROM CLIENT WHERE employee_ssn IN (SELECT emp_ssn FROM EMPLOYEES WHERE lname = 'higgins'))
+
 
 /*
 * Division SQL Query
+* Select all vehicle models that have not been in an accident
 */
+
+SELECT vehicle_model FROM VEHICLES WHERE NOT EXISTS (SELECT Report_Number FROM ACCIDENT_HISTORY)
+
+
 
 /*
 * Aggregation SQL Query
-* Get the sum of all the employee salaries
+* Get the sum of all the employee salaries who make more than $40,000
 */
-SELECT SUM(salary) FROM EMPLOYEES
+SELECT SUM(salary) FROM EMPLOYEES WHERE salary > 40000
 
 
 /*

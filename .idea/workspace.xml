@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c567845-0346-44d6-b612-2896ded9e13c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLQueriesPart3.sql" afterPath="$PROJECT_DIR$/SQLQueriesPart3.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/insertValues.sql" afterPath="$PROJECT_DIR$/insertValues.sql" />
     </list>
     <ignored path="dbCourseGroupProj.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -531,15 +533,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1491933482906</updated>
-      <workItem from="1491933485043" duration="1329000" />
+      <workItem from="1491933485043" duration="1927000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1329000" />
+    <option name="totallyTimeSpent" value="1927000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
