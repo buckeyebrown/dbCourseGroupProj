@@ -31,15 +31,14 @@ SELECT fname, lname, client_ssn FROM DEPENDENTS
 
 /*
 * Aggregation SQL Query
+* Get the sum of all the employee salaries
 */
+SELECT SUM(salary) FROM EMPLOYEES
+
 
 /*
 * JOINs SQL Query
 * Retrieve all the accounts, along with the car insurance policies and boat insurance policies attached to them.
 */
-
-SELECT * FROM ACCOUNTS
-SELECT * FROM CAR_INSURANCE_POLICY
-SELECT * FROM BOAT_INSURANCE_POLICY
 
 SELECT * FROM (ACCOUNTS as a INNER JOIN CAR_INSURANCE_POLICY as c ON a.Account_ID = c.accountNumber) INNER JOIN BOAT_INSURANCE_POLICY as b ON b.accountNumber = a.Account_ID
