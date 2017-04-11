@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c567845-0346-44d6-b612-2896ded9e13c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/phasefiveWebApp/build.gradle" afterPath="$PROJECT_DIR$/phasefiveWebApp/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/phasefiveWebApp/src/main/java/com/databases/PhasefiveSpringRESTController.java" afterPath="$PROJECT_DIR$/phasefiveWebApp/src/main/java/com/databases/PhasefiveSpringRESTController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/phasefiveWebApp/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/phasefiveWebApp/src/main/resources/application.properties" />
     </list>
     <ignored path="dbCourseGroupProj.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/phasefiveWebApp/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state relative-caret-position="44">
+              <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -136,11 +134,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/phasefiveWebApp/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="220">
+              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -347,11 +345,11 @@
       <list>
         <option value="$PROJECT_DIR$/phasefiveWebApp/src/main/java/com/databases/PhasefiveWebAppApplication.java" />
         <option value="$PROJECT_DIR$/phasefiveWebApp/build/resources/main/application.properties" />
-        <option value="$PROJECT_DIR$/phasefiveWebApp/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/phasefiveWebApp/src/main/java/com/databases/PhasefiveSpringRESTController.java" />
         <option value="$PROJECT_DIR$/phasefiveWebApp/src/main/java/com/databases/PhasefiveSpringConfig.java" />
         <option value="$PROJECT_DIR$/phasefiveWebApp/src/main/webapp/stylesheet.css" />
         <option value="$PROJECT_DIR$/phasefiveWebApp/build.gradle" />
+        <option value="$PROJECT_DIR$/phasefiveWebApp/src/main/resources/application.properties" />
       </list>
     </option>
   </component>
@@ -1207,12 +1205,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1491933482906</updated>
-      <workItem from="1491933485043" duration="5424000" />
+      <workItem from="1491933485043" duration="5655000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5424000" />
+    <option name="totallyTimeSpent" value="5655000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -1289,14 +1287,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/phasefiveWebApp/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/phasefiveWebApp/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="106">
@@ -1366,8 +1356,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/phasefiveWebApp/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="220">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phasefiveWebApp/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
           <folding />
         </state>
       </provider>
