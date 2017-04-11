@@ -16,14 +16,15 @@ import java.io.PrintWriter;
 
 import java.sql.SQLException;
 import java.io.IOException;
-import org.json.JSONException;
+//import org.json.JSONException;
 
 @RestController
 public class PhasefiveSpringRESTController {
 	public static PrintWriter out;
 	//private SQLConnect sc;
-	private JSONResponse jsonResponse;
+	//private JSONResponse jsonResponse;
 
+	/**
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public ModelAndView index() {
 		ModelAndView mav = new ModelAndView();
@@ -51,5 +52,10 @@ public class PhasefiveSpringRESTController {
 		} finally {
 			out.close();
 		}
+	}*/
+
+	@RequestMapping("/")
+	public String index() {
+		return "Greetings from Spring Boot!";
 	}
 }
