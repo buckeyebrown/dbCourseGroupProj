@@ -1,3 +1,5 @@
+use insurance;
+
 /*
 * Organize the Employees, Lawyers, Clients by their last, then first name
 * Organize Dependents by first name.
