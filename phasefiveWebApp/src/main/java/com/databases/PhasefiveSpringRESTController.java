@@ -5,6 +5,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.ui.Model;
+import org.springframework.stereotype.Controller;
+
 
 import javax.servlet.http.HttpServletResponse;
 
@@ -21,37 +24,16 @@ import java.io.IOException;
 @RestController
 public class PhasefiveSpringRESTController {
 	public static PrintWriter out;
-	//private SQLConnect sc;
-	//private JSONResponse jsonResponse;
 
-	@RequestMapping(value = "/", method = RequestMethod.GET)
-	public ModelAndView index() {
-		ModelAndView mav = new ModelAndView();
-		mav.setViewName("index");
-		return mav;
+	@RequestMapping("/")
+	String home() {
+		return "Hello World!";
 	}
-	/**
 
-	@RequestMapping(value = "/MainServ", method = RequestMethod.GET)
-	public void mainServ(@RequestParam(value = "orderNumber", defaultValue = "") String orderNum,
-						 @RequestParam(value = "marketCode", defaultValue = "0") String marCode, HttpServletResponse response)
-			throws SQLException, IOException {
-
-		response.setContentType("application/json; charset=UTF-8");
-		out = response.getWriter();
-
-		try {
-			ObtainOrderNumberAndMarketCode.setOrderNumber(orderNum);
-			ObtainOrderNumberAndMarketCode.setMarketCode(Integer.parseInt(marCode));
-			sc = new SQLConnect();
-			sc.setUpSQLConnections();
-			jsonResponse = new JSONResponse();
-			jsonResponse.obtainJSONResponse();
-		} catch (JSONException | SQLException e) {
-			e.printStackTrace();
-		} finally {
-			out.close();
-		}
-	}*/
+	@RequestMapping("/example")
+	public String hello(Model model, @RequestParam(value="name", required=false, defaultValue="World") String name) {
+		model.addAttribute("name", name);
+		return "hello";
+	}
 
 }

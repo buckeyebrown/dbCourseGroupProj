@@ -31,14 +31,14 @@
 						<option value="4">US</option>
 					</select>
 				</div>
-				<br></br> <input type="button" id='find' value='Search'
+				<br> <input type="button" id='find' value='Search'
 					onclick="sendRequestAndObtainResponse()">
 			</div>
-			<br></br>
+			<br>
 			<div class ="ErrorMessage"></div>
 		</div>
 	</div>
-	<br></br>
+	<br>
 	<div id="contents">
 	<div id="orderStatusContents"></div>
 	<div id="orderCreateContents"></div>
