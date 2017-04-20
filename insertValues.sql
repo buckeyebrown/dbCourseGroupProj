@@ -38,6 +38,22 @@ INSERT INTO EMPLOYEES (emp_ssn, work_phone, salary, fname, lname, broker_company
 values ('313343232', '3217027891', '90000', 'alexa', 'newman', 'Sallys brokerage');
 
 
+INSERT INTO EMPLOYEES (emp_ssn, work_phone, salary, fname, lname, broker_company) 
+values ('223343232', '3254567891', '50000', 'sam', 'jennings', 'best brokers');
+
+INSERT INTO EMPLOYEES (emp_ssn, work_phone, salary, fname, lname, broker_company) 
+values ('432343232', '3337027891', '90000', 'alex', 'Obama', 'Sallys brokerage');
+
+INSERT INTO EMPLOYEES (emp_ssn, work_phone, salary, fname, lname, broker_company) 
+values ('555343232', '4447027891', '100000', 'Father', 'Radcliffe', 'Sallys brokerage');
+
+
+INSERT INTO EMPLOYEES (emp_ssn, work_phone, salary, fname, lname, broker_company) 
+values ('666332243', '6664567891', '32000', 'hannah', 'Bakura', 'Tims brokerage');
+
+INSERT INTO EMPLOYEES (emp_ssn, work_phone, salary, fname, lname, broker_company) 
+values ('777332243', '7774567891', '3000', 'DeQuan', 'He', 'Tims brokerage');
+
 
 /*
 * CLIENT INSERTS
@@ -50,7 +66,22 @@ INSERT INTO CLIENT (Fname, Lname, SSN, Primary_Phone_Number, Primary_Email, Addr
 values ('Jeffrey', 'Brown', '123343232', 33, 'mrperson@gmail.com', '101 hello Way Columbus, OH 43201', '05/07/1971', '234332243', 56);
 
 INSERT INTO CLIENT (Fname, Lname, SSN, Primary_Phone_Number, Primary_Email, Address, DOB, employee_ssn, account_number) 
-values ('Adam', 'Morakis', '313343232', 32, 'morakis@gmail.com', '123 Edison Street Columbus, OH 43201', '06/07/1971', '313343232', 57);
+values ('Adam', 'Morakis', '433343232', 32, 'morakis@gmail.com', '123 Edison Street Columbus, OH 43201', '06/07/1971', '313343232', 57);
+
+INSERT INTO CLIENT (Fname, Lname, SSN, Primary_Phone_Number, Primary_Email, Address, DOB, employee_ssn, account_number) 
+values ('Jerry', 'Oswald', '413343232', 32, 'Oswald@gmail.com', '123 Pinewillow Street Columbus, OH 43201', '06/07/1922', '313343232', 58);
+
+INSERT INTO CLIENT (Fname, Lname, SSN, Primary_Phone_Number, Primary_Email, Address, DOB, employee_ssn, account_number) 
+values ('Jeffrey', 'Polin', '523343232', 33, 'mrperson54@gmail.com', '101 Savvy Street Columbus, OH 43201', '05/23/1971', '123456789', 59);
+
+INSERT INTO CLIENT (Fname, Lname, SSN, Primary_Phone_Number, Primary_Email, Address, DOB, employee_ssn, account_number) 
+values ('Jim', 'Chan', '663343232', 32, 'Chan@gmail.com', '123 PineMeadow Street Columbus, OH 43201', '12/07/1922', ‘223343232', 60);
+
+INSERT INTO CLIENT (Fname, Lname, SSN, Primary_Phone_Number, Primary_Email, Address, DOB, employee_ssn, account_number) 
+values ('Paolo', 'Saon', '883343232', 33, 'mrpersonwed@gmail.com', '112 hello Way Columbus, OH 43201', '07/07/1971', '234332243', 61);
+INSERT INTO CLIENT (Fname, Lname, SSN, Primary_Phone_Number, Primary_Email, Address, DOB, employee_ssn, account_number) 
+values ('Barack', 'Clinton', '993343232', 32, 'Chan3445@gmail.com', '222 PineMeadow Street Columbus, OH 43201', '12/07/1922', ‘223343232', 62);
+
 
 
 
@@ -60,7 +91,7 @@ values ('Adam', 'Morakis', '313343232', 32, 'morakis@gmail.com', '123 Edison Str
 */
 
 INSERT INTO DEPENDENTS (Fname, Lname, Dependent_SSN, Client_SSN, DOB) 
-values ('Sandy', 'Smith', '123118462', '123111232', '11/18/1970');
+values ('Sandy', 'Smith', '123118462', ‘883343232', '11/18/1970');
 
 INSERT INTO DEPENDENTS (Fname, Lname, Dependent_SSN, Client_SSN, DOB) 
 values ('Mark', 'Edison', '953118462', '123111232', '11/18/1980');
@@ -69,7 +100,7 @@ INSERT INTO DEPENDENTS (Fname, Lname, Dependent_SSN, Client_SSN, DOB)
 values ('Halle', 'Berry', '531118462', '123343232', '11/14/1990');
 
 INSERT INTO DEPENDENTS (Fname, Lname, Dependent_SSN, Client_SSN, DOB) 
-values ('Brad', 'Pitt', '531118952', '123343232', '11/11/1990');
+values ('Brad', 'Pitt', '531118952', '663343232', '11/11/1990');
 
 
 
@@ -102,6 +133,14 @@ values ('221781', '01/10/1995', '21', '123343232');
 
 INSERT INTO ACCOUNTS (Account_ID, Date_Created, Account_Age, client_ssn) 
 values ('117815', '02/10/1995', '21', '313343232');
+
+INSERT INTO ACCOUNTS (Account_ID, Date_Created, Account_Age, client_ssn) 
+values ('447815', '02/10/1996', '20', '663343232');
+
+INSERT INTO ACCOUNTS (Account_ID, Date_Created, Account_Age, client_ssn) 
+values ('654321', '02/10/1997', '19', '523343232');
+
+
 
 /*
 * PAYMENT INSERTS
@@ -152,6 +191,13 @@ values ('3', '4000', '10', 'y', '03/10/2015', '2', '221781')
 INSERT INTO Car_Insurance_Policy (Policy_Num,Term_Price, Term_Length, Active, startDate, policyAge, accountNumber) 
 values ('4', '5000', '5', 'y', '03/10/2013', '4', '326781')
 
+INSERT INTO Car_Insurance_Policy (Policy_Num,Term_Price, Term_Length, Active, startDate, policyAge, accountNumber) 
+values ('13', '5000', '5', 'y', '03/10/2013', '4', '447815')
+
+INSERT INTO Car_Insurance_Policy (Policy_Num,Term_Price, Term_Length, Active, startDate, policyAge, accountNumber) 
+values ('13', '5000', '5', 'y', '03/10/2013', '4', '654321')
+
+
 
 /*
 * Boat INSURANCE POLICY INSERTS
@@ -168,6 +214,13 @@ values ('3', '6000', '10', 'y', '03/10/2015', '2', '326781')
 
 INSERT INTO Boat_Insurance_Policy (Policy_Num,Term_Price, Term_Length, Active, startDate, policyAge, accountNumber) 
 values ('4', '2000', '5', 'y', '03/10/2013', '4', '117815')
+
+
+INSERT INTO Boat_Insurance_Policy (Policy_Num,Term_Price, Term_Length, Active, startDate, policyAge, accountNumber) 
+values ('13', '2000', '5', 'y', '03/10/2013', '4', '447815')
+
+INSERT INTO Boat_Insurance_Policy (Policy_Num,Term_Price, Term_Length, Active, startDate, policyAge, accountNumber) 
+values ('14', '2000', '5', 'y', '03/10/2013', '4', '654321')
 
 
 /*
@@ -217,6 +270,12 @@ values('77711222223333344', '13000', '1996', 'Honda', 'Accord', '4', '14000', '1
 
 INSERT INTO VEHICLES(Vin, Total_cost, vehicle_year, vehicle_make, vehicle_model, vehicle_doors, bodily_injury_deductible, bodily_injury_coverage, comprehensive_injury_deductible, comprehensive_injury_coverage, uninsured_motorist_deductible, uninsured_motorist_coverage, collison_injury_deductible, collison_injury_coverage, accident_report_number, at_fault, is_totaled, damage_cost, vehicles_policy_number)
 values('7771122222333DD44', '13000', '1998', 'Honda', 'Civic', '4', '13000', '2000000', '500', '30000', '502', '50000', '300', '30000', '400', 'yes', 'yes', '500000', '3')
+
+INSERT INTO VEHICLES(Vin, Total_cost, vehicle_year, vehicle_make, vehicle_model, vehicle_doors, bodily_injury_deductible, bodily_injury_coverage, comprehensive_injury_deductible, comprehensive_injury_coverage, uninsured_motorist_deductible, uninsured_motorist_coverage, collison_injury_deductible, collison_injury_coverage, accident_report_number, at_fault, is_totaled, damage_cost, vehicles_policy_number)
+values('8971122222333DD44', '13000', '1998', 'Honda', 'Ultra', '4', '13000', '2000000', '500', '30000', '502', '50000', '300', '30000', '23', 'No', 'No', '0', '4')
+
+INSERT INTO VEHICLES(Vin, Total_cost, vehicle_year, vehicle_make, vehicle_model, vehicle_doors, bodily_injury_deductible, bodily_injury_coverage, comprehensive_injury_deductible, comprehensive_injury_coverage, uninsured_motorist_deductible, uninsured_motorist_coverage, collison_injury_deductible, collison_injury_coverage, accident_report_number, at_fault, is_totaled, damage_cost, vehicles_policy_number)
+values('6661122222333DD44', '13000', '1998', 'Toyota', 'Winchester', '4', '13000', '2000000', '500', '30000', '502', '50000', '300', '30000', '23', 'No', 'No', '0', '4')
 
 
 /*
@@ -269,3 +328,4 @@ values('BestInsurance', 'Sallys brokerage')
 
 INSERT INTO Companies_Brokers(Ins_Company_Name, Broker_Company_Name)
 values('RightInsurance', 'Tims brokerage')
+
